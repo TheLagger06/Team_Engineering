@@ -1,0 +1,64 @@
+ .container1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1.9fr 0.1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+}
+
+.main {
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+.main1 {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.main2 {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.footer {
+    grid-area: 2 / 1 / 3 / 3;
+}
+
+body {
+    margin: 0;
+    background-color: f8f8f8;
+}
+
+.container1>* {
+    display: grid;
+    place-content: center;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-shadow: 0 1px 6px 0 hsl(0, 0%, 0%, 20%);
+}
+
+.container1 {
+    max-width: 100%;
+    height: calc(100vh);
+    margin: 0 auto;
+}
+
+.main2 {
+    background-image: url(df.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer {
+    background-color: #18164d;
+    
+
+}
+
+.main1 {
+    background-image: radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255, 255, 255, 0.50) 47%, rgba(0, 0, 0, 0.50) 100%);
+    background-blend-mode: screen;
+}
+
+.btn-colour {
+    background-color: #18164d;
+    color: white;
+} 
